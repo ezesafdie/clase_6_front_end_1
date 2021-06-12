@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pet Shop</title>
+    <link rel="shortcut icon" href="images/Dog.svg" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div id="oferta">
+        <div class="row">
+          <div class="col-md-3"><p>Grandes ofertas comedores</p></div>
+          <div class="col-md-7"></div>
+          <div class="col-md-2">
+            <nav>
+              <select
+                id="formHeader1"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected>Español</option>
+                <option value="1">Ingles</option>
+                <option value="2">Portugues</option>
+                <option value="3">Otros</option>
+              </select>
+              <select
+                id="formHeader2"
+                class="form-select"
+                aria-label="Default select example"
+              >
+                <option selected>ARG$</option>
+                <option value="1">USD</option>
+                <option value="2">Otros</option>
+              </select>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div id="rellenoHeader"></div>
+      <div id="headerPrincipal">
+        <div class="row">
+          <div class="col-md-4">
+            <img src="images/Cat.svg" alt="dibujo de gatito" class="dibujito" />
+            <h2 id="frontHeader">Front</h2>
+            <h2 id="catDogHeader">Cat&Dog</h2>
+            <img
+              src="images/Dog.svg"
+              alt="dibujo de perrito"
+              class="dibujito"
+            />
+          </div>
+          <div class="col-md-3"></div>
+          <div class="col-md-5" id="colMdBotonesHeader">
+            <nav id="botonesHeader">
+              <div>
+                <img src="images/pawprint.svg" alt="" />
+                <a href=""><p>Categorias</p></a>
+              </div>
+              <div>
+                <img src="images/pawprint.svg" alt="" />
+                <a href=""><p>Pets</p></a>
+              </div>
+              <div>
+                <img src="images/pawprint.svg" alt="" />
+                <a href=""><p>Nosotros</p></a>
+              </div>
+              <div>
+                <img src="images/pawprint.svg" alt="" />
+                <a href=""><p>Contactanos</p></a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section id="banner">
+        <div id="textoBanner">
+          <div>
+            <h1>¡Es un placer tenerte aquí!</h1>
+            <p>¡Comederos en descuento!</p>
+            <span id="spanBoton"
+              ><button type="button" class="btn btn-warning">
+                COMEDEROS
+              </button></span
+            >
+          </div>
+        </div>
+      </section>
+      <section id="productosDestacados">
+        <div id="textoProductosDestacados">
+          <div>
+            <span><img src="images/pawprint_naranja.svg" alt="" /></span>
+            <h1><strong>Productos Destacados</strong></h1>
+            <span><p>Comederos - Accesorios - Comida</p></span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-1"></div>
+          <div class="col-md-10">
+            <div class="row">
+              <div class="col-md-4 colProductoDestacado">
+                <div>
+                  <img src="images/churrasquito.png" alt="" />
+                </div>
+                <div class="margenAbajo">
+                  <h5>Juguete Churrasquito</h5>
+                  <p><b>$150</b></p>
+                </div>
+              </div>
+              <div class="col-md-4 colProductoDestacado">
+                <div>
+                  <img src="images/comedero.png" alt="" />
+                </div>
+                <div class="margenAbajo">
+                  <h5>Comedero para perro</h5>
+                  <p><b>$250</b></p>
+                </div>
+              </div>
+              <div class="col-md-4 colProductoDestacado">
+                <div><img src="images/Huesito.png" alt="" /></div>
+                <div class="margenAbajo">
+                  <h5>Juguete Huesito</h5>
+                  <p><b>$650</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-1"></div>
+        </div>
+      </section>
+      <section id="contactanos">
+        <div id="contactenosh2"><h2>Contáctanos</h2></div>
+        <div class="row">
+          <div class="col-md-3"></div>
+          <div class="col-md-6">
+            <form>
+              <div class="mb-3">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Nombre y Apellido"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="email"
+                  placeholder="Ingresá tu correo electrónico"
+                />
+              </div>
+              <div class="mb-3">
+                <input
+                  type="password"
+                  class="form-control"
+                  id="telefono"
+                  placeholder="Teléfono"
+                />
+              </div>
+              <div id="botonesForm">
+                <button type="submit" class="btn btn-primary" id="resetear">
+                  Resetear
+                </button>
+                <button type="submit" class="btn btn-primary" id="enviar">
+                  Enviar
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section id="suscribirse">
+        <div id="suscribirseDiv">
+          <img src="images/enviar-correo.svg" alt="" />
+          <h4>Suscríbete para más novedades</h4>
+        </div>
+        <form>
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control"
+              id="ingresaCorreo"
+              aria-describedby="emailHelp"
+              placeholder="Ingresá tu correo electronico"
+            />
+          </div>
+          <div id="botonesForm">
+            <button type="submit" class="btn btn-primary" id="suscibir">
+              Enviar
+            </button>
+          </div>
+        </form>
+      </section>
+      <section id="contacto">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="opcionesContacto">
+              <img src="images/ubicacion.svg" alt="" />
+              <span
+                ><h4>Localidad</h4>
+                <p>Calle - Provinica</p></span
+              >
+            </div>
+            <div class="opcionesContacto">
+              <img src="images/telefono.svg" alt="" />
+              <span
+                ><h4>Teléfono</h4>
+                <p>Número de teléfono</p></span
+              >
+            </div>
+            <div class="opcionesContacto">
+              <img src="images/mail.svg" alt="" />
+              <span
+                ><h4>Correo Electrónico</h4>
+                <p>Dirección de correo</p></span
+              >
+            </div>
+          </div>
+          <div class="col-md-4"></div>
+          <div class="col-md-4" id="contactoLogo">
+            <img src="images/Cat.svg" alt="dibujo de gatito" class="dibujito" />
+            <h2 id="frontContacto">Front</h2>
+            <h2 id="catDogContacto">Cat&Dog</h2>
+            <img
+              src="images/Dog.svg"
+              alt="dibujo de perrito"
+              class="dibujito"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="derechosReservados">
+        <p>Todos los derechos reservados Front End</p>
+      </section>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
